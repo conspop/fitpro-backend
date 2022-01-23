@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import RegisterListCreate, RegistrationRetrieveUpdateDestroy
+from .views import RegistrationListCreate, RegistrationRetrieveUpdateDestroy
 
 urlpatterns = [
-    path("", RegisterListCreate.as_view()),
+    path("", RegistrationListCreate.as_view()),
     path("<int:pk>", RegistrationRetrieveUpdateDestroy.as_view())
 ]

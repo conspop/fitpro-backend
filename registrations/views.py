@@ -3,7 +3,7 @@ from .serializers import RegistrationSerializer
 
 from rest_framework import generics
 
-class RegisterListCreate(generics.ListCreateAPIView):
+class RegistrationListCreate(generics.ListCreateAPIView):
     serializer_class = RegistrationSerializer
     permission_classes = [IsAuthenticated]
 
